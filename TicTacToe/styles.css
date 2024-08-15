@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    --heading:#93B7bE;
+    --grid-border:#A799B7;
+    --box:#E0CA3C;
+    --background:#2D3047;
+    --reset:#FF6542;
+}
+
+body{
+    /* box-sizing: border-box; */
+    text-align: center;
+    background-color: var(--background);
+}
+
+.main-heading{
+    margin-top: 1rem;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--heading);
+    font-size: 5rem;
+}
+
+.container{
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2vmin;
+}
+
+.box{
+    
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(94, 235, 240, 0.7);
+    background-color: var(--box);
+    font-size: 14vmin;
+    color: #293ccd;
+}
+
+.reset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    margin-top: 1.5rem;
+    height: 8vmin;
+    width: 22vmin;
+    font-weight: 600;
+    border-radius: 1rem;
+    color: var(--background);
+    font-size: 3vmin;
+    background-color: var(--reset);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+@media (max-width: 750px) {
+    .btn{
+        text-wrap: wrap;
+        height: 14vmin;
+        width: 20vmin;
+        font-size: 5vmin;
+    }
+}
+
+.new{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #new-btn{
+    margin-top: 1.5rem;
+    height: 8vmin;
+    width: 22vmin;
+    font-weight: 600;
+    border-radius: 1rem;
+    color: var(--background);
+    font-size: 3vmin;
+    background-color: var(--reset);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.hide{
+    display: none;
+}
+
+.msg{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 5vmin;
+    color: rgb(180, 255, 51);
+}
